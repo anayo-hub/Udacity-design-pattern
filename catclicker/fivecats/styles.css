@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main,
+article {
+  padding: 20px;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+main div {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Add hover effect */
+}
+
+main div:hover {
+  transform: translateY(-5px);
+}
+
+main img {
+  width: 150px; /* Increased image size */
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Article Section */
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Limit article width for better readability */
+}
+
+.cat-info {
+  text-align: center;
+}
+
+.cat-name {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.image-content {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.click-count {
+  font-size: 0.9rem;
+  color: #555;
+}
